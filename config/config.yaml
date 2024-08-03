@@ -1,0 +1,9 @@
+artifacts_root : artifacts
+
+
+data_ingestion:
+  root_dir: /Users/amoghagadde/Desktop/Amogha/Projects/Data_Science/Text-Summarizer/artifacts/data_ingestion
+  source_URL: https://github.com/Amogha97/Text-Summarizer/raw/main/data.zip
+  local_data_file: /Users/amoghagadde/Desktop/Amogha/Projects/Data_Science/Text-Summarizer/artifacts/data_ingestion/data.zip
+  unzip_dir: /Users/amoghagadde/Desktop/Amogha/Projects/Data_Science/Text-Summarizer/artifacts/data_ingestion
+
