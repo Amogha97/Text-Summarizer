@@ -12,3 +12,24 @@ data_validation:
   root_dir: /Users/amoghagadde/Desktop/Amogha/Projects/Data_Science/Text-Summarizer/artifacts/data_validation
   STATUS_FILE: /Users/amoghagadde/Desktop/Amogha/Projects/Data_Science/Text-Summarizer/artifacts/data_validation/status.txt
   ALL_REQUIRED_FILES: ['train', 'test', 'validation']
+
+
+data_transformation:
+  root_dir: /Users/amoghagadde/Desktop/Amogha/Projects/Data_Science/Text-Summarizer/artifacts/data_transformation
+  data_path: /Users/amoghagadde/Desktop/Amogha/Projects/Data_Science/Text-Summarizer/artifacts/data_ingestion/samsum_dataset
+  tokenizer_name: google/pegasus-cnn_dailymail
+
+
+model_trainer:
+  root_dir: /Users/amoghagadde/Desktop/Amogha/Projects/Data_Science/Text-Summarizer/artifacts/model_trainer
+  data_path: /Users/amoghagadde/Desktop/Amogha/Projects/Data_Science/Text-Summarizer/artifacts/data_transformation/samsum_dataset
+  # model_ckpt: google/pegasus-cnn_dailymail
+  model_ckpt: t5-small
+
+
+model_evaluation:
+  root_dir: /Users/amoghagadde/Desktop/Amogha/Projects/Data_Science/Text-Summarizer/artifacts/model_evaluation
+  data_path: /Users/amoghagadde/Desktop/Amogha/Projects/Data_Science/Text-Summarizer/artifacts/data_transformation/samsum_dataset
+  model_path: /Users/amoghagadde/Desktop/Amogha/Projects/Data_Science/Text-Summarizer/artifacts/model_trainer/t5-samsum-model
+  tokenizer_path: /Users/amoghagadde/Desktop/Amogha/Projects/Data_Science/Text-Summarizer/artifacts/model_trainer/tokenizer
+  metric_file_name: /Users/amoghagadde/Desktop/Amogha/Projects/Data_Science/Text-Summarizer/artifacts/model_evaluation/metrics.csv
