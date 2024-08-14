@@ -1,3 +1,4 @@
 Miniconda3-latest-MacOSX-arm64.sh filter=lfs diff=lfs merge=lfs -text
 artifacts/model_trainer/checkpoint-31/model.safetensors filter=lfs diff=lfs merge=lfs -text
 artifacts/model_trainer/checkpoint-31/optimizer.pt filter=lfs diff=lfs merge=lfs -text
+artifacts/model_trainer/t5-samsum-model/model.safetensors filter=lfs diff=lfs merge=lfs -text
